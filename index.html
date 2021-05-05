@@ -4,7 +4,7 @@
 
 <form action="/action_page.php">
   <label for="pword">Password:</label><br>
-  <input type="text" id="pword" name="pword" value=""><br>
+  <input type="text" id="userInput" name="pword" value=""><br>
 </form> 
 
 	
@@ -12,7 +12,10 @@
 </body>
 </html>
 
-var firstName = document.getElementsByName("pword")[0].value;
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
 	
 	
 <head>
