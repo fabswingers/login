@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
 
+<div class='wrapper'>
+<form id='nameForm'>
+<div class='form-uname'>
+    <label id='nameLable' for='nameField'>Create a username:</label>
+    <input id='nameField' type='text' maxlength='25'></input>
+</div>
+<div class='form-sub'>
+    <button id='subButton' type='button'>Print your name!</button>
+</div>
+</form>
 
-<form action="/action_page.php">
-  <label for="pword">Password:</label><br>
-  <input type="text" id="userInput" name="pword" value=""><br>
-</form> 
-function othername() {
-    var input = document.getElementById("userInput").value;
-    alert(input);
-}
-	
-	
-</body>
-</html>
-
+<div>
+    <p id='result'></p></div>
+</div>
 
 <head>
 <title>Send Mail</title>
